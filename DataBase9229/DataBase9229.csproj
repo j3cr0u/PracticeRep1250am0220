@@ -81,16 +81,16 @@
     <Compile Include="userLogdeg.Designer.cs">
       <DependentUpon>userLogdeg.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainForm.cs">
+    <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainForm.Designer.cs">
-      <DependentUpon>mainForm.cs</DependentUpon>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="mainForm.resx">
-      <DependentUpon>mainForm.cs</DependentUpon>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="userReg.resx">
+      <DependentUpon>userReg.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

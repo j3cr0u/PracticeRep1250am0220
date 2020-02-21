@@ -16,7 +16,7 @@ namespace DataBase9229
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainForm());
+            Application.Run(new loginForm());
         }
     }
 }

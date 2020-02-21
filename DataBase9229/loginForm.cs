@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DataBase9229
 {
-    public partial class mainForm : Form
+    public partial class loginForm : Form
     {
-        public mainForm()
+        public loginForm()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace DataBase9229
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            String userLogin = loginTextbox.Text;
+            String userLogin = usernameTextbox.Text;
             String userPass = passTextbox.Text;
             dbche example1 = new dbche();
             DataTable mtbtable = new DataTable();
@@ -52,6 +52,12 @@ namespace DataBase9229
             this.Hide();
             userReg forma = new userReg();
             forma.Show();
+        }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+            loginButton.Select();
+            loginButton.Focus();
         }
     }
 }
