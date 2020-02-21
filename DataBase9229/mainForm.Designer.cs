@@ -30,34 +30,101 @@
         {
             this.mainFormPanel = new System.Windows.Forms.Panel();
             this.quitLabel = new System.Windows.Forms.Label();
+            this.loginLabel = new System.Windows.Forms.Label();
+            this.passLabel = new System.Windows.Forms.Label();
+            this.loginTextbox = new System.Windows.Forms.TextBox();
+            this.passTextbox = new System.Windows.Forms.TextBox();
+            this.loginButton = new System.Windows.Forms.Button();
+            this.suggestRegistrationLabel = new System.Windows.Forms.Label();
             this.mainFormPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainFormPanel
             // 
+            this.mainFormPanel.Controls.Add(this.suggestRegistrationLabel);
+            this.mainFormPanel.Controls.Add(this.loginButton);
+            this.mainFormPanel.Controls.Add(this.passTextbox);
+            this.mainFormPanel.Controls.Add(this.loginTextbox);
+            this.mainFormPanel.Controls.Add(this.passLabel);
+            this.mainFormPanel.Controls.Add(this.loginLabel);
             this.mainFormPanel.Controls.Add(this.quitLabel);
             this.mainFormPanel.Location = new System.Drawing.Point(1, 2);
             this.mainFormPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainFormPanel.Name = "mainFormPanel";
-            this.mainFormPanel.Size = new System.Drawing.Size(598, 367);
+            this.mainFormPanel.Size = new System.Drawing.Size(267, 367);
             this.mainFormPanel.TabIndex = 0;
             // 
             // quitLabel
             // 
             this.quitLabel.AutoSize = true;
             this.quitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.quitLabel.Location = new System.Drawing.Point(568, 9);
+            this.quitLabel.Location = new System.Drawing.Point(239, 7);
             this.quitLabel.Name = "quitLabel";
             this.quitLabel.Size = new System.Drawing.Size(19, 18);
             this.quitLabel.TabIndex = 0;
             this.quitLabel.Text = "X";
             this.quitLabel.Click += new System.EventHandler(this.quitLabel_Click);
             // 
+            // loginLabel
+            // 
+            this.loginLabel.AutoSize = true;
+            this.loginLabel.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLabel.Location = new System.Drawing.Point(13, 93);
+            this.loginLabel.Name = "loginLabel";
+            this.loginLabel.Size = new System.Drawing.Size(63, 25);
+            this.loginLabel.TabIndex = 1;
+            this.loginLabel.Text = "Login";
+            // 
+            // passLabel
+            // 
+            this.passLabel.AutoSize = true;
+            this.passLabel.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passLabel.Location = new System.Drawing.Point(12, 142);
+            this.passLabel.Name = "passLabel";
+            this.passLabel.Size = new System.Drawing.Size(54, 25);
+            this.passLabel.TabIndex = 2;
+            this.passLabel.Text = "Pass";
+            // 
+            // loginTextbox
+            // 
+            this.loginTextbox.Location = new System.Drawing.Point(83, 93);
+            this.loginTextbox.Name = "loginTextbox";
+            this.loginTextbox.Size = new System.Drawing.Size(100, 20);
+            this.loginTextbox.TabIndex = 3;
+            // 
+            // passTextbox
+            // 
+            this.passTextbox.Location = new System.Drawing.Point(83, 147);
+            this.passTextbox.Name = "passTextbox";
+            this.passTextbox.Size = new System.Drawing.Size(100, 20);
+            this.passTextbox.TabIndex = 4;
+            // 
+            // loginButton
+            // 
+            this.loginButton.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.Location = new System.Drawing.Point(95, 188);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(74, 31);
+            this.loginButton.TabIndex = 5;
+            this.loginButton.Text = "Proceed";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // suggestRegistrationLabel
+            // 
+            this.suggestRegistrationLabel.AutoSize = true;
+            this.suggestRegistrationLabel.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.suggestRegistrationLabel.Location = new System.Drawing.Point(92, 321);
+            this.suggestRegistrationLabel.Name = "suggestRegistrationLabel";
+            this.suggestRegistrationLabel.Size = new System.Drawing.Size(168, 34);
+            this.suggestRegistrationLabel.TabIndex = 6;
+            this.suggestRegistrationLabel.Text = "Don`t have an account?\r\n Register here";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(271, 366);
             this.Controls.Add(this.mainFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -74,6 +141,12 @@
 
         private System.Windows.Forms.Panel mainFormPanel;
         private System.Windows.Forms.Label quitLabel;
+        private System.Windows.Forms.TextBox passTextbox;
+        private System.Windows.Forms.TextBox loginTextbox;
+        private System.Windows.Forms.Label passLabel;
+        private System.Windows.Forms.Label loginLabel;
+        private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Label suggestRegistrationLabel;
     }
 }
 
