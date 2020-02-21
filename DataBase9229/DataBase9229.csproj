@@ -69,6 +69,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dbche.cs" />
+    <Compile Include="userReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userReg.Designer.cs">
+      <DependentUpon>userReg.cs</DependentUpon>
+    </Compile>
     <Compile Include="userLogdeg.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -35,6 +35,23 @@ namespace DataBase9229
             retriveDataCmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = userPass;
             msdadapter.SelectCommand = retriveDataCmd;
             msdadapter.Fill(mtbtable);
+            if (mtbtable.Rows.Count > 0)
+            {
+                this.Hide();
+                userLogdeg forma = new userLogdeg();
+                forma.Show();
+            }
+            else
+            {
+                MessageBox.Show("Пошёл нахуй\n(Fuck you)");
+            }
+        }
+
+        private void suggestRegistrationLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            userReg forma = new userReg();
+            forma.Show();
         }
     }
 }
