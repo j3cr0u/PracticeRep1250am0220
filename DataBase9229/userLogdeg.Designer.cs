@@ -1,6 +1,6 @@
 ﻿namespace DataBase9229
 {
-    partial class Form1
+    partial class userLogdeg
     {
         /// <summary>
         /// Required designer variable.
@@ -37,4 +37,3 @@
         #endregion
     }
 }
-

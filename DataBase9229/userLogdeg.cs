@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DataBase9229
 {
-    public partial class Form1 : Form
+    public partial class userLogdeg : Form
     {
-        public Form1()
+        public userLogdeg()
         {
             InitializeComponent();
         }
