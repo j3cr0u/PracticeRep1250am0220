@@ -52,7 +52,7 @@
             this.mainFormPanel.Controls.Add(this.loginLabel);
             this.mainFormPanel.Controls.Add(this.quitLabel);
             this.mainFormPanel.ForeColor = System.Drawing.Color.Black;
-            this.mainFormPanel.Location = new System.Drawing.Point(2, 1);
+            this.mainFormPanel.Location = new System.Drawing.Point(1, 1);
             this.mainFormPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainFormPanel.Name = "mainFormPanel";
             this.mainFormPanel.Size = new System.Drawing.Size(305, 370);
@@ -74,7 +74,7 @@
             this.suggestRegistrationLabel.AutoSize = true;
             this.suggestRegistrationLabel.Font = new System.Drawing.Font("Trajan Pro", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suggestRegistrationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.suggestRegistrationLabel.Location = new System.Drawing.Point(96, 323);
+            this.suggestRegistrationLabel.Location = new System.Drawing.Point(86, 328);
             this.suggestRegistrationLabel.Name = "suggestRegistrationLabel";
             this.suggestRegistrationLabel.Size = new System.Drawing.Size(206, 32);
             this.suggestRegistrationLabel.TabIndex = 6;
@@ -83,7 +83,6 @@
             // 
             // loginButton
             // 
-            this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Trajan Pro", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.loginButton.Location = new System.Drawing.Point(129, 184);

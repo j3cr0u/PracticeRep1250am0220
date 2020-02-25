@@ -74,7 +74,7 @@
             this.loginTextbox.Location = new System.Drawing.Point(67, 123);
             this.loginTextbox.Name = "loginTextbox";
             this.loginTextbox.Size = new System.Drawing.Size(169, 20);
-            this.loginTextbox.TabIndex = 3;
+            this.loginTextbox.TabIndex = 1;
             this.loginTextbox.Enter += new System.EventHandler(this.loginTextbox_Enter);
             this.loginTextbox.Leave += new System.EventHandler(this.loginTextbox_Leave);
             // 
@@ -83,7 +83,7 @@
             this.nameTextbox.Location = new System.Drawing.Point(67, 279);
             this.nameTextbox.Name = "nameTextbox";
             this.nameTextbox.Size = new System.Drawing.Size(169, 20);
-            this.nameTextbox.TabIndex = 4;
+            this.nameTextbox.TabIndex = 3;
             this.nameTextbox.Enter += new System.EventHandler(this.nameTextbox_Enter);
             this.nameTextbox.Leave += new System.EventHandler(this.nameTextbox_Leave);
             // 
@@ -92,7 +92,7 @@
             this.emailTextbox.Location = new System.Drawing.Point(67, 329);
             this.emailTextbox.Name = "emailTextbox";
             this.emailTextbox.Size = new System.Drawing.Size(169, 20);
-            this.emailTextbox.TabIndex = 5;
+            this.emailTextbox.TabIndex = 4;
             this.emailTextbox.Enter += new System.EventHandler(this.emailTextbox_Enter);
             this.emailTextbox.Leave += new System.EventHandler(this.emailTextbox_Leave);
             // 
