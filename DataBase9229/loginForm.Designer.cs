@@ -55,7 +55,7 @@
             this.mainFormPanel.Location = new System.Drawing.Point(2, 1);
             this.mainFormPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainFormPanel.Name = "mainFormPanel";
-            this.mainFormPanel.Size = new System.Drawing.Size(305, 366);
+            this.mainFormPanel.Size = new System.Drawing.Size(305, 370);
             this.mainFormPanel.TabIndex = 0;
             // 
             // label1
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 366);
+            this.ClientSize = new System.Drawing.Size(305, 370);
             this.Controls.Add(this.mainFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
