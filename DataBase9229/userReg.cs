@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,7 @@ namespace DataBase9229
 
         private void loginTextbox_Enter(object sender, EventArgs e)
         {
-            if(loginTextbox.Text== "Enter your Login")
+            if (loginTextbox.Text == "Enter your Login")
             {
                 loginTextbox.Text = "";
                 loginTextbox.ForeColor = Color.Black;
@@ -115,6 +116,48 @@ namespace DataBase9229
                 MessageBox.Show("Some blocks left unfilled");
                 return;
             }
+            if (userCheck())
+            {
+                return;
+            }
+            dbche userRegEx = new dbche();
+            MySqlCommand RegisterUserCommand = new MySqlCommand("INSERT INTO`mainTable`(`Login`,`Password`,`Email`,`Name`) VALUES (@Login, @Password, @Email, @Name)", userRegEx.getConnection());
+            RegisterUserCommand.Parameters.Add("@Login", MySqlDbType.VarChar).Value = loginTextbox.Text;
+            RegisterUserCommand.Parameters.Add("@Password", MySqlDbType.VarChar).Value = passwordTextbox.Text;
+            RegisterUserCommand.Parameters.Add("@Email", MySqlDbType.VarChar).Value = emailTextbox.Text;
+            RegisterUserCommand.Parameters.Add("@Name", MySqlDbType.VarChar).Value = nameTextbox.Text;
+            userRegEx.openConnection();
+            if (RegisterUserCommand.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Регистрация прошла успешно");
+                this.Close();
+                loginForm window = new loginForm();
+                window.Show();
+            }
+            else
+                MessageBox.Show("Регистрация не прошла");
+
+            userRegEx.closeConnection();
+        }
+
+        public Boolean userCheck()
+        {
+            dbche userCheckEx = new dbche();
+            DataTable maintable = new DataTable();
+            MySqlDataAdapter tableAdapter = new MySqlDataAdapter();
+            MySqlCommand ChooseLogColumn = new MySqlCommand("SELECT * FROM `maintable` WHERE `Login`=@Lg", userCheckEx.getConnection());
+            ChooseLogColumn.Parameters.Add("@Lg", MySqlDbType.VarChar).Value = loginTextbox.Text;
+            tableAdapter.SelectCommand = ChooseLogColumn;
+            tableAdapter.Fill(maintable);
+            if (maintable.Rows.Count > 0)
+            {
+                MessageBox.Show("Login already exists(пошёл нахуй)");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private void alreadyHaveAccLabel_Click(object sender, EventArgs e)
@@ -123,5 +166,6 @@ namespace DataBase9229
             loginForm forma = new loginForm();
             forma.Show();
         }
+
     }
 }
