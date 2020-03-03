@@ -9,7 +9,7 @@ namespace DataBase9229
 {
     class dbche
     {
-        MySqlConnection connection = new MySqlConnection("server = localhost; port = 3306; username = root; password = root; database = oreshin;");
+        MySqlConnection connection = new MySqlConnection("server = localhost; port = 3306; username = root; password = root; database = repair_shop;");
 
 
         public void openConnection()

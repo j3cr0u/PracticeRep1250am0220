@@ -121,7 +121,7 @@ namespace DataBase9229
                 return;
             }
             dbche userRegEx = new dbche();
-            MySqlCommand RegisterUserCommand = new MySqlCommand("INSERT INTO`mainTable`(`Login`,`Password`,`Email`,`Name`) VALUES (@Login, @Password, @Email, @Name)", userRegEx.getConnection());
+            MySqlCommand RegisterUserCommand = new MySqlCommand("INSERT INTO`users`(`Login`,`Password`,`Email`,`Name`) VALUES (@Login, @Password, @Email, @Name)", userRegEx.getConnection());
             RegisterUserCommand.Parameters.Add("@Login", MySqlDbType.VarChar).Value = loginTextbox.Text;
             RegisterUserCommand.Parameters.Add("@Password", MySqlDbType.VarChar).Value = passwordTextbox.Text;
             RegisterUserCommand.Parameters.Add("@Email", MySqlDbType.VarChar).Value = emailTextbox.Text;
