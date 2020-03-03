@@ -101,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="userLogdeg.resx">
+      <DependentUpon>userLogdeg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userReg.resx">
       <DependentUpon>userReg.cs</DependentUpon>
     </EmbeddedResource>
