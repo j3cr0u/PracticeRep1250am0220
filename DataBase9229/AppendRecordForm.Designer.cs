@@ -63,7 +63,7 @@
             "Плашет",
             "Телефон",
             "Телевизор",
-            "Передатчики",
+            "Передатчик",
             "Другое"});
             this.itemType_comboBox.Location = new System.Drawing.Point(200, 208);
             this.itemType_comboBox.Name = "itemType_comboBox";
