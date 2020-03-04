@@ -53,41 +53,44 @@
             this.mainFormPanel.Controls.Add(this.quitLabel);
             this.mainFormPanel.ForeColor = System.Drawing.Color.Black;
             this.mainFormPanel.Location = new System.Drawing.Point(1, 1);
-            this.mainFormPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.mainFormPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainFormPanel.Name = "mainFormPanel";
-            this.mainFormPanel.Size = new System.Drawing.Size(305, 370);
+            this.mainFormPanel.Size = new System.Drawing.Size(410, 455);
             this.mainFormPanel.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trajan Pro", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(112, 24);
+            this.label1.Location = new System.Drawing.Point(167, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 26);
+            this.label1.Size = new System.Drawing.Size(85, 31);
             this.label1.TabIndex = 7;
             this.label1.Text = "Login";
             // 
             // suggestRegistrationLabel
             // 
             this.suggestRegistrationLabel.AutoSize = true;
-            this.suggestRegistrationLabel.Font = new System.Drawing.Font("Trajan Pro", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.suggestRegistrationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suggestRegistrationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.suggestRegistrationLabel.Location = new System.Drawing.Point(86, 328);
+            this.suggestRegistrationLabel.Location = new System.Drawing.Point(133, 403);
+            this.suggestRegistrationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.suggestRegistrationLabel.Name = "suggestRegistrationLabel";
-            this.suggestRegistrationLabel.Size = new System.Drawing.Size(206, 32);
+            this.suggestRegistrationLabel.Size = new System.Drawing.Size(209, 40);
             this.suggestRegistrationLabel.TabIndex = 6;
             this.suggestRegistrationLabel.Text = "Don`t have an account?\r\n Register here";
             this.suggestRegistrationLabel.Click += new System.EventHandler(this.suggestRegistrationLabel_Click);
             // 
             // loginButton
             // 
-            this.loginButton.Font = new System.Drawing.Font("Trajan Pro", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.loginButton.Location = new System.Drawing.Point(129, 184);
+            this.loginButton.Location = new System.Drawing.Point(190, 225);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(74, 31);
+            this.loginButton.Size = new System.Drawing.Size(99, 38);
             this.loginButton.TabIndex = 5;
             this.loginButton.Text = "Proceed";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -95,38 +98,42 @@
             // 
             // passTextbox
             // 
-            this.passTextbox.Location = new System.Drawing.Point(117, 143);
+            this.passTextbox.Location = new System.Drawing.Point(174, 175);
+            this.passTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passTextbox.Name = "passTextbox";
             this.passTextbox.PasswordChar = '*';
-            this.passTextbox.Size = new System.Drawing.Size(123, 20);
+            this.passTextbox.Size = new System.Drawing.Size(163, 22);
             this.passTextbox.TabIndex = 4;
             // 
             // usernameTextbox
             // 
-            this.usernameTextbox.Location = new System.Drawing.Point(117, 95);
+            this.usernameTextbox.Location = new System.Drawing.Point(174, 116);
+            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.usernameTextbox.Name = "usernameTextbox";
-            this.usernameTextbox.Size = new System.Drawing.Size(123, 20);
+            this.usernameTextbox.Size = new System.Drawing.Size(163, 22);
             this.usernameTextbox.TabIndex = 3;
             // 
             // passLabel
             // 
             this.passLabel.AutoSize = true;
-            this.passLabel.Font = new System.Drawing.Font("Trajan Pro", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.passLabel.Location = new System.Drawing.Point(11, 143);
+            this.passLabel.Location = new System.Drawing.Point(33, 175);
+            this.passLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passLabel.Name = "passLabel";
-            this.passLabel.Size = new System.Drawing.Size(95, 19);
+            this.passLabel.Size = new System.Drawing.Size(100, 24);
             this.passLabel.TabIndex = 2;
             this.passLabel.Text = "Password";
             // 
             // loginLabel
             // 
             this.loginLabel.AutoSize = true;
-            this.loginLabel.Font = new System.Drawing.Font("Trajan Pro", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.loginLabel.Location = new System.Drawing.Point(11, 96);
+            this.loginLabel.Location = new System.Drawing.Point(33, 117);
+            this.loginLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(97, 19);
+            this.loginLabel.Size = new System.Drawing.Size(108, 24);
             this.loginLabel.TabIndex = 1;
             this.loginLabel.Text = "UserName";
             // 
@@ -134,21 +141,22 @@
             // 
             this.quitLabel.AutoSize = true;
             this.quitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.quitLabel.Location = new System.Drawing.Point(273, 7);
+            this.quitLabel.Location = new System.Drawing.Point(371, 8);
+            this.quitLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.quitLabel.Name = "quitLabel";
-            this.quitLabel.Size = new System.Drawing.Size(19, 18);
+            this.quitLabel.Size = new System.Drawing.Size(25, 24);
             this.quitLabel.TabIndex = 0;
             this.quitLabel.Text = "X";
             this.quitLabel.Click += new System.EventHandler(this.quitLabel_Click);
             // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 370);
+            this.ClientSize = new System.Drawing.Size(410, 455);
             this.Controls.Add(this.mainFormPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";

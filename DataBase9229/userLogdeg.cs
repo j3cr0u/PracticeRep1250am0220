@@ -18,11 +18,6 @@ namespace DataBase9229
             InitializeComponent();
         }
 
-        private void UserLogdeg_Load(object sender, EventArgs e)
-        {
-            session_label.Text = "User " + "Not finished ";
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             dbche tosee = new dbche();
@@ -44,11 +39,18 @@ namespace DataBase9229
             }
             else if (check_item == "Ноутбуки")
             {
-                string selectQueryLaptops = "SELECT * FROM `items` WHERE `type_item`='Ноутбук'";
-                MySqlDataAdapter myads = new MySqlDataAdapter(selectQueryLaptops, tosee.getConnection());
+                string selectQueryLaptops = "SELECT * FROM `items` WHERE `type_item`=";
+                string wordLaptop = "'Ноутбук'";
+                MySqlDataAdapter myads = new MySqlDataAdapter(selectQueryLaptops + wordLaptop, tosee.getConnection());
                 myads.Fill(table);
                 dataGridView_Items.DataSource = table;
             }
+        }
+
+        private void AppendRecord_button_Click(object sender, EventArgs e)
+        {
+            AppendRecordForm form = new AppendRecordForm();
+            form.Show();
         }
     }
 }
