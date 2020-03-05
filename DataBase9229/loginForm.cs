@@ -13,6 +13,7 @@ namespace DataBase9229
 {
     public partial class loginForm : Form
     {
+
         public loginForm()
         {
             InitializeComponent();
@@ -30,7 +31,7 @@ namespace DataBase9229
             dbche example1 = new dbche();
             DataTable mtbtable = new DataTable();
             MySqlDataAdapter msdadapter = new MySqlDataAdapter();
-            MySqlCommand retriveDataCmd = new MySqlCommand("SELECT * FROM `mainTable` WHERE `Login`=@log AND `Password`=@pass", example1.getConnection());
+            MySqlCommand retriveDataCmd = new MySqlCommand("SELECT * FROM `users` WHERE `Login`=@log AND `Password`=@pass", example1.getConnection());
             retriveDataCmd.Parameters.Add("@log", MySqlDbType.VarChar).Value = userLogin;
             retriveDataCmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = userPass;
             msdadapter.SelectCommand = retriveDataCmd;
@@ -39,11 +40,12 @@ namespace DataBase9229
             {
                 this.Hide();
                 userLogdeg forma = new userLogdeg();
+                forma.session_label.Text = "User: " + this.usernameTextbox.Text;
                 forma.Show();
             }
             else
             {
-                MessageBox.Show("Пошёл нахуй\n(Fuck you)");
+                MessageBox.Show("Вы не зарегистрированы");
             }
         }
 

@@ -69,6 +69,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dbche.cs" />
+    <Compile Include="AppendRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppendRecordForm.Designer.cs">
+      <DependentUpon>AppendRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eraiseRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eraiseRecordForm.Designer.cs">
+      <DependentUpon>eraiseRecordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="userReg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppendRecordForm.resx">
+      <DependentUpon>AppendRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eraiseRecordForm.resx">
+      <DependentUpon>eraiseRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +119,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="userLogdeg.resx">
+      <DependentUpon>userLogdeg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userReg.resx">
       <DependentUpon>userReg.cs</DependentUpon>
     </EmbeddedResource>
