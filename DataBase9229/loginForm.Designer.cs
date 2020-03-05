@@ -75,7 +75,7 @@
             this.suggestRegistrationLabel.AutoSize = true;
             this.suggestRegistrationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suggestRegistrationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.suggestRegistrationLabel.Location = new System.Drawing.Point(133, 403);
+            this.suggestRegistrationLabel.Location = new System.Drawing.Point(186, 405);
             this.suggestRegistrationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.suggestRegistrationLabel.Name = "suggestRegistrationLabel";
             this.suggestRegistrationLabel.Size = new System.Drawing.Size(209, 40);
@@ -88,7 +88,7 @@
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.loginButton.Location = new System.Drawing.Point(190, 225);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(99, 38);
             this.loginButton.TabIndex = 5;
@@ -99,7 +99,7 @@
             // passTextbox
             // 
             this.passTextbox.Location = new System.Drawing.Point(174, 175);
-            this.passTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.passTextbox.Name = "passTextbox";
             this.passTextbox.PasswordChar = '*';
             this.passTextbox.Size = new System.Drawing.Size(163, 22);
@@ -108,7 +108,7 @@
             // usernameTextbox
             // 
             this.usernameTextbox.Location = new System.Drawing.Point(174, 116);
-            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameTextbox.Name = "usernameTextbox";
             this.usernameTextbox.Size = new System.Drawing.Size(163, 22);
             this.usernameTextbox.TabIndex = 3;

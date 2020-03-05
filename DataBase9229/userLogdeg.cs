@@ -21,7 +21,7 @@ namespace DataBase9229
         private void Button1_Click(object sender, EventArgs e)
         {
             dbche tosee = new dbche();
-            String check_item = chooseType_Box.Text;
+            String check_item = chooseType_comboBox.Text;
             DataTable table = new DataTable();
             string selectFromItems = "SELECT * FROM `items` ";
             string whereCondition = "WHERE `type_item` = ";
@@ -90,6 +90,18 @@ namespace DataBase9229
         private void AppendRecord_button_Click(object sender, EventArgs e)
         {
             AppendRecordForm form = new AppendRecordForm();
+            form.Show();
+        }
+
+        private void UserLogdeg_Load(object sender, EventArgs e)
+        {
+            chooseType_comboBox.Text = "Все";
+            proceedFilter_Button.PerformClick();
+        }
+
+        private void DeleteRecord_button_Click(object sender, EventArgs e)
+        {
+            eraiseRecordForm form = new eraiseRecordForm();
             form.Show();
         }
     }

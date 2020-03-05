@@ -30,7 +30,7 @@
         {
             this.dataGridView_Items = new System.Windows.Forms.DataGridView();
             this.session_label = new System.Windows.Forms.Label();
-            this.chooseType_Box = new System.Windows.Forms.ComboBox();
+            this.chooseType_comboBox = new System.Windows.Forms.ComboBox();
             this.proceedFilter_Button = new System.Windows.Forms.Button();
             this.appendRecord_button = new System.Windows.Forms.Button();
             this.deleteRecord_button = new System.Windows.Forms.Button();
@@ -56,10 +56,10 @@
             this.session_label.TabIndex = 1;
             this.session_label.Text = "User login";
             // 
-            // chooseType_Box
+            // chooseType_comboBox
             // 
-            this.chooseType_Box.FormattingEnabled = true;
-            this.chooseType_Box.Items.AddRange(new object[] {
+            this.chooseType_comboBox.FormattingEnabled = true;
+            this.chooseType_comboBox.Items.AddRange(new object[] {
             "Все",
             "Мониторы",
             "Компьютеры",
@@ -70,10 +70,10 @@
             "Телевизоры",
             "Передатчики",
             "Другое"});
-            this.chooseType_Box.Location = new System.Drawing.Point(391, 12);
-            this.chooseType_Box.Name = "chooseType_Box";
-            this.chooseType_Box.Size = new System.Drawing.Size(121, 24);
-            this.chooseType_Box.TabIndex = 2;
+            this.chooseType_comboBox.Location = new System.Drawing.Point(391, 12);
+            this.chooseType_comboBox.Name = "chooseType_comboBox";
+            this.chooseType_comboBox.Size = new System.Drawing.Size(121, 24);
+            this.chooseType_comboBox.TabIndex = 2;
             // 
             // proceedFilter_Button
             // 
@@ -103,6 +103,7 @@
             this.deleteRecord_button.TabIndex = 5;
             this.deleteRecord_button.Text = "Delete Rec";
             this.deleteRecord_button.UseVisualStyleBackColor = true;
+            this.deleteRecord_button.Click += new System.EventHandler(this.DeleteRecord_button_Click);
             // 
             // userLogdeg
             // 
@@ -112,11 +113,12 @@
             this.Controls.Add(this.deleteRecord_button);
             this.Controls.Add(this.appendRecord_button);
             this.Controls.Add(this.proceedFilter_Button);
-            this.Controls.Add(this.chooseType_Box);
+            this.Controls.Add(this.chooseType_comboBox);
             this.Controls.Add(this.session_label);
             this.Controls.Add(this.dataGridView_Items);
             this.Name = "userLogdeg";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.UserLogdeg_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Items)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,10 +128,10 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView_Items;
-        private System.Windows.Forms.ComboBox chooseType_Box;
-        private System.Windows.Forms.Button proceedFilter_Button;
+        private System.Windows.Forms.ComboBox chooseType_comboBox;
         public System.Windows.Forms.Label session_label;
         private System.Windows.Forms.Button appendRecord_button;
         private System.Windows.Forms.Button deleteRecord_button;
+        public System.Windows.Forms.Button proceedFilter_Button;
     }
 }

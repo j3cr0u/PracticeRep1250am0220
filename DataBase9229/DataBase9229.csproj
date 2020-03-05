@@ -75,6 +75,12 @@
     <Compile Include="AppendRecordForm.Designer.cs">
       <DependentUpon>AppendRecordForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="eraiseRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eraiseRecordForm.Designer.cs">
+      <DependentUpon>eraiseRecordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="userReg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AppendRecordForm.resx">
       <DependentUpon>AppendRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eraiseRecordForm.resx">
+      <DependentUpon>eraiseRecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>

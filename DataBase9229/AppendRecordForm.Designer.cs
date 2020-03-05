@@ -53,7 +53,7 @@
             // 
             // itemType_comboBox
             // 
-            this.itemType_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.itemType_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.itemType_comboBox.FormattingEnabled = true;
             this.itemType_comboBox.Items.AddRange(new object[] {
             "Монитор",
@@ -67,12 +67,12 @@
             "Другое"});
             this.itemType_comboBox.Location = new System.Drawing.Point(200, 208);
             this.itemType_comboBox.Name = "itemType_comboBox";
-            this.itemType_comboBox.Size = new System.Drawing.Size(120, 33);
+            this.itemType_comboBox.Size = new System.Drawing.Size(120, 28);
             this.itemType_comboBox.TabIndex = 2;
             // 
             // discribeItemBad_richTextBox
             // 
-            this.discribeItemBad_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.discribeItemBad_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.discribeItemBad_richTextBox.Location = new System.Drawing.Point(50, 280);
             this.discribeItemBad_richTextBox.MaxLength = 196;
             this.discribeItemBad_richTextBox.Name = "discribeItemBad_richTextBox";
@@ -93,18 +93,18 @@
             // 
             // dateTime_maskedTextBox
             // 
-            this.dateTime_maskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.dateTime_maskedTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dateTime_maskedTextBox.Location = new System.Drawing.Point(200, 413);
-            this.dateTime_maskedTextBox.Mask = "00-00-0000";
+            this.dateTime_maskedTextBox.Mask = "0000-00-00";
             this.dateTime_maskedTextBox.Name = "dateTime_maskedTextBox";
             this.dateTime_maskedTextBox.PromptChar = '.';
-            this.dateTime_maskedTextBox.Size = new System.Drawing.Size(120, 30);
+            this.dateTime_maskedTextBox.Size = new System.Drawing.Size(120, 28);
             this.dateTime_maskedTextBox.TabIndex = 6;
             this.dateTime_maskedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // modelNameItem_richTextBox
             // 
-            this.modelNameItem_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.modelNameItem_richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.modelNameItem_richTextBox.Location = new System.Drawing.Point(50, 150);
             this.modelNameItem_richTextBox.Name = "modelNameItem_richTextBox";
             this.modelNameItem_richTextBox.Size = new System.Drawing.Size(270, 50);
@@ -155,7 +155,7 @@
             // 
             this.quitLabel.AutoSize = true;
             this.quitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.quitLabel.Location = new System.Drawing.Point(353, 9);
+            this.quitLabel.Location = new System.Drawing.Point(371, 9);
             this.quitLabel.Name = "quitLabel";
             this.quitLabel.Size = new System.Drawing.Size(27, 25);
             this.quitLabel.TabIndex = 12;
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 573);
+            this.ClientSize = new System.Drawing.Size(410, 575);
             this.Controls.Add(this.quitLabel);
             this.Controls.Add(this.specDate_label);
             this.Controls.Add(this.discribeMalfunc_label);
