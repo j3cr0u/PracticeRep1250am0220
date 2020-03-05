@@ -40,6 +40,7 @@ namespace DataBase9229
             {
                 this.Hide();
                 userLogdeg forma = new userLogdeg();
+                forma.session_label.Text = "User: " + this.usernameTextbox.Text;
                 forma.Show();
             }
             else
